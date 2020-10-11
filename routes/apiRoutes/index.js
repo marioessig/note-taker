@@ -1,6 +1,7 @@
+// set up dependencies
 const router = require('express').Router();
-const noteRoutes = require('../apiRoutes/Routes.js');
+const routes = require('../apiRoutes/routes.js');
 
-router.use(noteRoutes);
+router.use(routes);
 
 module.exports = router;

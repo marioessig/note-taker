@@ -1,3 +1,4 @@
+// set up dependencies
 const router = require('express').Router();
 const { filterByQuery, findById, createNewNote, validateNote, deleteNote } = require('../../lib/notes');
 let notes = require('../../db/db');

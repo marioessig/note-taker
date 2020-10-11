@@ -1,22 +1,20 @@
-// set up requirements
-const path = require("path");
-const fs = require("fs");
-const apiRoutes = require("./routes/apiRoutes");
-const htmlRoutes = require("./routes/htmlRoutes");
-
-// set up express & local server port
-const express = require("express");
-const app = express();
+// set up dependencies
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 const PORT = process.env.PORT || 3001;
+const app = express();
 
+// set up middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
+app.use(express.static('public'));
 
-// set up routes
-app.use("/api", apiRoutes);
-app.use("/", htmlRoutes);
-
+// set up port
 app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}!`);
+    console.log(`API server now on port ${PORT}!`);
 });
