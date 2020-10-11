@@ -1,0 +1,15 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "## Table of Contents * [Challenge Goal](#challenge-goal) * [Challenge Requirements](#challenge-requirements) * [Challenge Result](#challenge-result)",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.5.2"
+  }
+}
