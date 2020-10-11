@@ -31,10 +31,10 @@ Create an application can be used to write and save notes.
 >*THEN* I am presented with empty fields to enter a new note title and the note’s text in the right-hand column <br>
 
 ### Mock-Up
-![mockup]()
+![mockup](https://github.com/marioessig/note-taker/blob/main/public/assets/images/notetaker-mockup.png)
 
 ### Functional & Deployed Application
-[functional application URL]()
+[functional application URL](https://geekpanda-note-taker.herokuapp.com/)
 
 ### Links:
-[GitHub Repository URL]()
+[GitHub Repository URL](https://github.com/marioessig/note-taker)
